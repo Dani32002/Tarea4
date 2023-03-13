@@ -15,7 +15,7 @@ public class Carga {
 			String[] strNums = linea.split("\t");
 			ArrayList<Integer> lineaNums = new ArrayList<>();
 			for (int i = 0; i < strNums.length; i++) {
-				if (strNums[i] != "-1") {
+				if (!strNums[i].equals("-1")) {
 					lineaNums.add(Integer.parseInt(strNums[i]));
 				} else {
 					lineaNums.add((int)Double.POSITIVE_INFINITY);

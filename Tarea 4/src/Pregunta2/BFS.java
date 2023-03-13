@@ -32,7 +32,8 @@ public class BFS implements AlgoritmoGrafoComponentes {
 			int vertice = fila.remove();
 			componente.add(vertice);
 			for (int i = 0; i < matriz.get(vertice).size(); i++) {
-				if ((matriz.get(vertice).get(i) != -1 || matriz.get(vertice).get(i) != 0) && visitados.contains(i)) {
+				int valor = matriz.get(vertice).get(i);
+				if (matriz.get(vertice).get(i) != 2147483647 && matriz.get(vertice).get(i) != 0 && !visitados.contains(i)) {
 					visitados.add(i);
 					fila.add(i);
 				}

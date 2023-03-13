@@ -29,7 +29,7 @@ public class Pregunta2 {
 			}
 			System.out.print("}");
 		}
-		System.out.print("{");
+		System.out.print("}\n");
 		System.out.println("Tiempo Total (milisegundos): "+(finalTiempo-inicioTiempo));
 	}
 }

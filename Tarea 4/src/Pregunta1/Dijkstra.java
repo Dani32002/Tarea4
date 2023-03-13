@@ -2,14 +2,21 @@ package Pregunta1;
 
 import java.util.ArrayList;
 
-import Pregunta2.AlgoritmoGrafo;
-
-public class Dijkstra implements AlgoritmoGrafo{
+public class Dijkstra implements AlgoritmoGrafoCostoMin{
 
 	@Override
-	public void algoritmo(ArrayList<ArrayList<Integer>> matriz) {
-		// TODO Auto-generated method stub
+	public ArrayList<ArrayList<Integer>> algoritmo(ArrayList<ArrayList<Integer>> matriz) {
+		
+		
+		return null;
+	}
+	
+	
+	public ArrayList<Integer> Dijkstra(ArrayList<ArrayList<Integer>> matriz, int inicio) {
+		
+		return null;
 		
 	}
 
+	
 }

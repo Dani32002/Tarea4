@@ -1,5 +1,7 @@
 package Pregunta1;
 
-public interface AlgoritmoGrafoCostoMin {
+import java.util.ArrayList;
 
+public interface AlgoritmoGrafoCostoMin {
+	public ArrayList<ArrayList<Integer>> algoritmo(ArrayList<ArrayList<Integer>> matriz);
 }

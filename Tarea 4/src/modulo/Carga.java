@@ -18,7 +18,7 @@ public class Carga {
 				if (!strNums[i].equals("-1")) {
 					lineaNums.add(Integer.parseInt(strNums[i]));
 				} else {
-					lineaNums.add((int)Double.POSITIVE_INFINITY);
+					lineaNums.add(Math.abs((int)Double.POSITIVE_INFINITY));
 				}
 			}
 			matriz.add(lineaNums);

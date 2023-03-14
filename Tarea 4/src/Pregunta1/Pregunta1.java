@@ -8,7 +8,7 @@ import modulo.Carga;
 public class Pregunta1 {
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, NumberFormatException, IOException {
 		Carga carga = new Carga();
-		String algoritmo = Carga.class.getPackage().getName() + "." + args[0];
+		String algoritmo = Pregunta1.class.getPackage().getName() + "." + args[0];
 		@SuppressWarnings("deprecation")
 		AlgoritmoGrafoCostoMin calculadora = (AlgoritmoGrafoCostoMin) Class.forName(algoritmo).newInstance();
 		ArrayList<ArrayList<Integer>> matriz = carga.cargarMatriz(args[1]);

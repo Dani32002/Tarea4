@@ -1,0 +1,18 @@
+Pregunta 1:
+En las configuraciones de ejecución los argumentos de entrada son el algoritmo que se desea 
+ejecutar (BellmanFord, Dijkstra o FloydWarshall) y el segundo argumentos es el nombre del archivo
+Ej: Dijkstra distances5.txt
+El retorno seria una matriz que representa los costos mínimos de cada vertice hacia todos los vértices del grafo
+junto con el tiempo de ejecución.
+
+Pregunta 2:
+En las configuraciones de ejecución el argumento debe ser el nombre del archivo
+Ej: distances5.txt
+El retorno sería los componentes fuertemente conectados como una lista con las listas de vértices de los componentes
+fuertemente conectados.
+
+Pregunta 3:
+En las configuraciones de ejecución el argumento debe ser el nombre del archivo
+Ej: distances5.txt
+El retorno es un boolean que indica si hay un ciclo (True) o no (False) en el grafo.
+

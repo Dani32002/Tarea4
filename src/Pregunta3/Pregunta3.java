@@ -14,7 +14,7 @@ public class Pregunta3 {
 		Boolean respuesta = dfs.algoritmo(matriz);
 		long finalTiempo = System.currentTimeMillis();
 		
-		System.out.println(respuesta);
+		System.out.println("HAY CICLOS? " + respuesta);
 		
 		System.out.println("Tiempo Total (milisegundos): "+(finalTiempo-inicioTiempo));
 	}

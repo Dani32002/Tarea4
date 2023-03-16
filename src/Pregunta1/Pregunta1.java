@@ -17,6 +17,7 @@ public class Pregunta1 {
 		ArrayList<ArrayList<Integer>> respuesta = calculadora.algoritmo(matriz);
 		long finalTiempo = System.currentTimeMillis();
 		
+		System.out.println("MATRIZ DE COSTOS MINIMOS: ");
 		System.out.print("{");
 		for (ArrayList<Integer> fila: respuesta) {
 			System.out.print("{");
@@ -27,7 +28,11 @@ public class Pregunta1 {
 					System.out.print(fila.get(i) + ",");
 				}
 			}
-			System.out.print("}\n");
+			if (respuesta.indexOf(fila) != respuesta.size()- 1) {
+				System.out.print("}\n");
+			} else {
+				System.out.print("}");
+			}
 		}
 		System.out.print("}\n");
 		System.out.println("Tiempo Total (milisegundos): "+(finalTiempo-inicioTiempo));

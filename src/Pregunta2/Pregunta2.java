@@ -17,6 +17,7 @@ public class Pregunta2 {
 		ArrayList<ArrayList<Integer>> respuesta = bfs.algoritmo(matriz);
 		long finalTiempo = System.currentTimeMillis();
 		
+		System.out.println("COMPONENTES FUERTEMENTE CONECTADOS:");
 		System.out.print("{");
 		for (ArrayList<Integer> fila: respuesta) {
 			System.out.print("{");
